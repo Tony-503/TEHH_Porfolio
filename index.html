@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tony | Full Stack Developer</title>
+  <title>Tony — Full‑Stack Developer</title>
+  <meta name="description" content="Tony — Full‑Stack Developer. I design and build performant, accessible web applications with a focus on clean code and great user experiences.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 
 
    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
@@ -40,19 +41,18 @@
   <section class="hero" id="home">
     <div class="hero-container">
       <div class="hero-content">
-        <h1>Hi, I'm Tony</h1>
-        <div class="subtitle">Full Stack Developer</div>
+        <h1>Hi — I'm Tony</h1>
+        <div class="subtitle">Full‑Stack Developer — Frontend & Backend</div>
         <div class="description">
-          I create beautiful, functional websites and applications that bring ideas to life. 
-          Passionate about clean code and amazing user experiences.
+          I design and build performant, accessible web applications. I focus on delivering clean, maintainable code and intuitive user experiences that solve real problems.
         </div>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          <a href="#projects" class="btn btn-primary" aria-label="View projects">See Projects</a>
+          <a href="#contact" class="btn btn-outline" aria-label="Contact me">Contact</a>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="./images/myFoto.png" alt="Tony's Profile Photo">
+      <div class="hero-image" aria-hidden="false">
+        <img src="./images/myFoto.png" alt="Portrait of Tony" />
       </div>
     </div>
   </section>
@@ -60,25 +60,21 @@
   <!-- About Section -->
   <section class="about" id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">About</h2>
       <div class="about-content">
         <div class="about-text">
-          <h3>Passionate Full Stack Developer</h3>
+          <h3>Experienced Full‑Stack Developer</h3>
           <p>
-            I'm a dedicated web developer who loves turning complex problems into simple, 
-            beautiful designs. With expertise in both front-end and back-end technologies, 
-            I build complete web solutions that are both functional and visually appealing.
+            I build full web solutions from concept to production — combining robust backend services with polished front-end interfaces. My approach prioritizes performance, accessibility, and maintainability.
           </p>
           <p>
-            My journey in web development started with curiosity and has grown into a 
-            passion for creating digital experiences that matter. I believe in writing 
-            clean, maintainable code and staying up-to-date with the latest technologies.
+            I enjoy collaborating with product teams and clients to translate requirements into scalable, well-tested code. I continually adopt modern tooling and best practices to deliver value quickly and reliably.
           </p>
         </div>
         <div class="about-stats">
           <div class="stat-item">
             <span class="stat-number">6+</span>
-            <span class="stat-label">Projects Completed</span>
+            <span class="stat-label">Projects Delivered</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">8+</span>
@@ -86,11 +82,11 @@
           </div>
           <div class="stat-item">
             <span class="stat-number">100%</span>
-            <span class="stat-label">work</span>
+            <span class="stat-label">On‑time Delivery</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">10</span>
-            <span class="stat-label">Languages</span>
+            <span class="stat-label">Languages & Tools</span>
           </div>
         </div>
       </div>
@@ -100,7 +96,10 @@
     <!-- Skills Section with Slider -->
     <section class="skills" id="skills">
       <div class="container">
-        <h2 class="section-title">My Skills</h2>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-intro" style="margin-bottom:1rem;">
+        Core technologies I use to build reliable, maintainable applications.
+      </p>
         <div class="skills-slider-container">
           <div class="skills-slider" id="skillsSlider">
             <div class="skill-card">
@@ -236,7 +235,7 @@
   <!-- Projects Section -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
+      <h2 class="section-title">Selected Projects</h2>
       <div class="projects-grid">
         
         <div class="project-card">
@@ -248,20 +247,16 @@
           <div class="project-content">
             <h3 class="project-title">Blog Post</h3>
             <p class="project-description">
-Built with Node.js and Express.js for robust backend functionality and EJS for dynamic content rendering, this application demonstrates a comprehensive understanding of web development.
-              
+              A content-driven web application built with Node.js and Express for server-side logic and EJS for templating. The project demonstrates routing, CRUD operations, and template-driven rendering.
             </p>
             <div class="project-tech">
               <span class="tech-tag">Node.js</span>
               <span class="tech-tag">Express</span>
-              <span class="tech-tag">js</span>
-              <span class="tech-tag">css</span>
+              <span class="tech-tag">EJS</span>
               <span class="tech-tag">Bootstrap</span>
             </div>
             <div class="project-links">
-              <a href="https://blog-ejs-i5sn.onrender.com/" class="btn btn-primary">
-                <i></i> View
-              </a>
+              <a href="https://blog-ejs-i5sn.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View</a>
             </div>
           </div>
         </div>
@@ -275,26 +270,20 @@ Built with Node.js and Express.js for robust backend functionality and EJS for d
           <div class="project-content">
             <h3 class="project-title">Movie Finder</h3>
             <p class="project-description">
-              For this project, I leveraged EJS for efficient templating and built the server-side logic with Node.js. I integrated Axios to seamlessly fetch data from the OMDb API, ensuring up-to-date movie information. On the front-end, I combined the flexibility of Vanilla CSS with the rapid development capabilities of Bootstrap 5, resulting in a responsive and intuitive user experience.
-
-              I focused on a smooth user journey by implementing intelligent error handling to guide users when a movie isn't found and included a welcoming message upon initial site access. For version control, I used Git and GitHub, and I successfully deployed the website online using Render.
+              A responsive search application using Node.js and Axios to query the OMDb API, combined with server-side rendering (EJS) and Bootstrap for a consistent, mobile-first UI.
             </p>
             <div class="project-tech">
-              <span class="tech-tag">HTML</span>
               <span class="tech-tag">Node.js</span>
               <span class="tech-tag">API</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">js</span>
-              <span class="tech-tag">bootstrap 5</span>
-              <span class="tech-tag">GitHub/Git</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">EJS</span>
             </div>
             <div class="project-links">
-              <a href="https://moviefinder-huzv.onrender.com/" class="btn btn-primary">
-                <i ></i> View
-              </a>
+              <a href="https://moviefinder-huzv.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -302,25 +291,24 @@ Built with Node.js and Express.js for robust backend functionality and EJS for d
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Let's Work Together</h2>
+      <h2 class="section-title">Contact</h2>
       <div class="contact-content">
         <div class="contact-info">
-          <h3>Get In Touch</h3>
+          <h3>Let's build something together</h3>
           <p>
-            Ready to bring your ideas to life? I'm always excited to work on 
-            new projects and collaborate with amazing people. Let's create something awesome together!
+            I’m available for freelance and contract work. Describe your project or share your timeline and I’ll get back to you promptly.
           </p>
           <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <span>tehhh4496@gmail.com</span>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:tehhh4496@gmail.com">tehhh4496@gmail.com</a>
           </div>
-          
+
           <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
             <span>Germantown</span>
           </div>
         </div>
-        
+
         <form class="contact-form" action="https://formspree.io/f/xdkkblaq" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
@@ -339,7 +327,7 @@ Built with Node.js and Express.js for robust backend functionality and EJS for d
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Send Message
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
           </button>
         </form>
       </div>
@@ -349,7 +337,7 @@ Built with Node.js and Express.js for robust backend functionality and EJS for d
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Tony - Full Stack Developer. Built with ❤️</p>
+      <p>&copy; 2025 Tony — Full‑Stack Developer. All rights reserved.</p>
     </div>
   </footer>
 
@@ -367,8 +355,10 @@ Built with Node.js and Express.js for robust backend functionality and EJS for d
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#' || href === '#0') return;
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({
             behavior: 'smooth',
